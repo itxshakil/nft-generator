@@ -6,19 +6,16 @@ const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const { MODE } = require(path.join(basePath, "constants/blend_mode.js"));
 const description =
   "This is the description of your NFT project, remember to replace this";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "image.png";
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Bodies" },
+      { name: "Faces" },
+      { name: "Clothes" },
     ],
   },
 ];
@@ -28,8 +25,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1200,
+  height: 1200,
 };
 
 const text = {

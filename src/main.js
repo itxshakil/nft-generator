@@ -121,7 +121,7 @@ const addMetadata = (_dna, _edition) => {
     dna: sha1(_dna),
     name: `#${_edition}`,
     description: description,
-    image: `${baseUri}/${_edition}.png`,
+    image: ``,
     edition: _edition,
     date: dateTime,
     ...extraMetadata,
@@ -142,6 +142,7 @@ const addAttributes = (_element) => {
 
 const loadLayerImg = async (_layer) => {
   return new Promise(async (resolve) => {
+    console.log(_layer);
     const image = await loadImage(`${_layer.selectedElement.path}`);
     resolve({ layer: _layer, loadedImage: image });
   });

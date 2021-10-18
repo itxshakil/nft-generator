@@ -10,12 +10,14 @@ const baseUri = "image.png";
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Background" },
-      { name: "Bodies" },
-      { name: "Faces" },
-      { name: "Clothes" },
+      { name: "body" },
+      { name: "face" },
+      { name: "accessory" },
+      { name: "hat" },
+      { name: "clothing" },
     ],
   },
 ];

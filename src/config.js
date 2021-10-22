@@ -15,9 +15,9 @@ const layerConfigurations = [
       { name: "Background" },
       { name: "body" },
       { name: "face" },
-      { name: "accessory" },
       { name: "hat" },
       { name: "clothing" },
+      { name: "accessory" },
     ],
   },
 ];
